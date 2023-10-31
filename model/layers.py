@@ -94,7 +94,10 @@ class TemporalHeteroModel(nn.Module):
         lbl = torch.cat((lbl_rl, lbl_fk), dim=1)
         if device == 'cuda':
             self.lbl = lbl.cuda()
+<<<<<<< HEAD
             print("使用的设备为：", self.lbl)
+=======
+>>>>>>> 4df19f7b088a6f1a6ceb1e023e3263debd0a43e2
         
         self.n = batch_size
 
